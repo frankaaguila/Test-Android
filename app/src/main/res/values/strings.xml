@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Android Test</string>
+    <string name="buscar_hint">Buscar una visita</string>
+    <string name="default_visitas">Tienes X visitas en el día</string>
+    <string name="visited">Visitada</string>
+    <string name="suburb">Suburb</string>
+    <string name="default_street">Calle 123</string>
+    <string name="main_prefs">MAIN_PREFS</string>
+    <string name="has_been_used">has_been_used</string>
+</resources>

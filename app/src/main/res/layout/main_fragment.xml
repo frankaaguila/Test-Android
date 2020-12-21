@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.MainFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <!--BUSCADOR-->
+        <EditText
+            android:id="@+id/editTextVisits"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_border"
+            android:elevation="5dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/buscar_hint"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:textColor="#AAA"
+            android:textSize="12sp"
+            tools:ignore="Autofill,RtlSymmetry,UnusedAttribute" />
+
+        <!-- Número de visitas -->
+        <TextView
+            android:id="@+id/textGreeting2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/default_visitas"
+            android:textSize="16sp"
+            android:textColor="#333"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="LinearLayoutManager"
+            />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
